@@ -1,0 +1,7 @@
+query UserById($id: uuid!) {
+  users(where: { id: { _eq: $id } }) {
+    displayName
+    email
+    id
+  }
+}
